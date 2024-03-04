@@ -1,0 +1,107 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: grey;
+}
+
+.calculator {
+  width: 350px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  background-color: black;  
+  box-shadow: 10px 10px 10px #000000;
+}
+
+.display {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: black;
+  border-bottom: 2px solid #ccc;
+}
+
+.input {
+  background-color: rgb(147, 145, 145);
+  border-radius: 5px;
+  color: #fff;
+  width: 98%;
+  height: 40px;
+  padding: 2px;
+  font-size: 20px;
+}
+
+.keys {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 6px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 5px;
+}
+
+.key {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 15px;
+  font-size: 20px;
+  outline: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.operator {
+  background-color: grey;
+  color: #fff;
+}
+.key.operator:hover {
+  background-color: rgb(201, 195, 195);
+}
+
+.action {
+  background-color: grey;
+  color: #fff;
+}
+.key.action:hover {
+  background-color: rgb(201, 195, 195);
+}
+
+.key:hover {
+  background-color: grey;
+}
+
+/* Media queries for responsiveness */
+
+/* Small devices (portrait phones) */
+@media only screen and (max-width: 767px) {
+  .calculator {
+    max-width: 90%;
+  }
+}
+
+/* Medium devices (landscape tablets) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .calculator {
+    max-width: 70%; /* Adjust as needed */
+  }
+}
+
+/* Large devices (laptops/desktops) */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .calculator {
+    max-width: 60%; /* Adjust as needed */
+  }
+}
+
+/* Extra large devices (large desktops) */
+@media only screen and (min-width: 1200px) {
+  .calculator {
+    max-width: 50%; /* Adjust as needed */
+  }
+}
